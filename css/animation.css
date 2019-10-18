@@ -1,0 +1,78 @@
+/*@import url('https://fonts.googleapis.com/css?family=Lora:700');
+
+
+.arrow {
+  color: #FFCC4C;
+  animation: up-and-down 1.5s ease-in-out infinite;
+}
+
+@keyframes up-and-down {
+  0%, 100% { transform: translateY(-15%)}
+  50%   { transform: translateY(15%)}
+}
+
+ */
+
+ .parallax-wrapper {
+  /* A propriedade perspective indica a "distância" entre o 
+  usuário e o plano Z.
+  Quanto maior o valor, mais perto o elemento estará do usuário.
+  Se for um valor negativo,
+  mais distante esse elemento estará.
+  */
+  perspective: 2px;
+
+  /* O transform-style indica se os elementos filhos devem ser 
+  transformados em um plano 2D ou 3D.
+  O valor preserve-3d indica que os elementos devem seguir o 
+  espaço 3D indicado.
+  */
+  transform-style: preserve-3d;
+ }
+
+ .parallax-section {
+  position: relative;
+  transform-style: inherit; 
+ }
+
+ .cell {
+  position: absolute;
+  top: 25%;
+ }
+
+.first-animation {
+  opacity: 0;
+  margin-left: -50px;
+}
+
+.hideme-animation {
+  opacity: 0;
+  /*animation: fade-in 1.0s ease-in-out;*/
+}
+
+.from-bottom {
+  margin-top: 50px;
+  /*animation: slide-up 1.0s ease-in-out;*/
+}
+
+.from-left {
+  margin-left: -50px !important;
+}
+
+
+/*@keyframes fade-in {
+  0% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}*/
